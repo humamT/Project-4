@@ -315,7 +315,7 @@ form input {
         display: flex;
         position: sticky;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px;
-        height: 63px;
+        height: 40px;
         z-index: 10;
     }
 
@@ -368,6 +368,7 @@ form input {
         gap: 18px;
         display: flex;
         flex-direction: column;
+        align-self: center;
     }
 
     .Restaurants-cards a {
