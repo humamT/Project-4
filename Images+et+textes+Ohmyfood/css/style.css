@@ -9,7 +9,12 @@ body {
 }
 
 .main-container {
-    max-width: 1440px;
+    /* max-width: 1440px;
+    margin: 0 auto; */
+}
+
+.main-wrapper {
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -65,7 +70,7 @@ form input {
 }
 
 .reservez h1 {
-    font-size: 24px;
+    font-size: 2.5em;
     margin: 0;
 }
 
@@ -77,14 +82,12 @@ form input {
 
 .reservez .Explorer {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 25px;
     background-image: linear-gradient(#FF79DA, #9356DC);
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    width: 218px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,13 +109,12 @@ form input {
     list-style: none;
     padding: 0;
     flex-direction: row;
+    gap: 2em;
 }
 
 .Fonctionnement menu li {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: calc(33% - -5px);
+    width: 100%;
 }
 
 .Fonctionnement .bubble {
@@ -125,25 +127,33 @@ form input {
     align-content: center;
     position: absolute;
     left: -10px;
-    bottom: 25px;
+    bottom: calc(50% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fonctionnement .button i{
+    color: #7E7E7E;
 }
 
 .Fonctionnement .button {
     background: #F6F6F6;
-    width: 322px;
-    height: 72px;
-    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5em 1.25em;
+    border-radius: 22px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
     font-size: 1.2rem;
-    display: inline-block;
+    display: flex;
     position: relative;
     cursor: pointer;
+    text-align: left;
+    gap: 1em;
 }
 
-.Fonctionnement .button i {
-    font-size: 18px;
-    margin: 15px;
+.Fonctionnement .button:active i {
     color: #9356DC;
 }
 
@@ -153,12 +163,11 @@ form input {
     flex-direction: column;
     align-items: baseline;
     background: #f6f6f6;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .Restaurants h3 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 25px;
     margin: 20px 0;
 }
 
@@ -170,7 +179,7 @@ form input {
 }
 
 .Restaurants-cards a {
-    width: calc(47% - 7px);
+    width: calc(47% - 28px);
     text-decoration: none;
 }
 
@@ -211,11 +220,13 @@ form input {
 
 .card-txt {
 
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
 
-    gap: 5px;
+gap: 5px;
+
+flex: 1;
 }
 
 .card-txt h4 {
@@ -238,6 +249,7 @@ form input {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 3em;
 }
 
 .heart *{
@@ -247,7 +259,7 @@ form input {
 
 .heart .fa-regular {
     display: block;
-    
+    font-size: 2em;
 }
 
 .heart .fa-solid {
@@ -255,8 +267,9 @@ form input {
     background: linear-gradient(#e66465, #9198e5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    font-size: 2em;
 }
 
 .heart:hover .fa-solid {
@@ -273,26 +286,28 @@ form input {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 30px 65px;
-    gap: 80px;
-    padding-right: 65px;
+    padding: 30px;
+    gap: 4em;
+    height: 4em;
+    align-items: end;
+    justify-content: end;
 }
 
 .footer img {
-    width: 100px;
     filter: invert(1);
+    height: 1.25em;
 }
 
 .footer nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
 .footer nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
     font-size: 1rem;
     display: flex;
     gap: 13px;
@@ -304,11 +319,15 @@ form input {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    .main-wrapper{
+        width: 100%;
+    }
+    
 
     .main-container {
-        max-width: 768px;
+        /* max-width: 768px;
         padding: 0;
-        gap: 2em;
+        gap: 2em; */
     }
 
     .main-container header {
@@ -340,7 +359,8 @@ form input {
         flex-direction: column;
         align-self: center;
         padding: 0 20px;
-        width: 335px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .Fonctionnement menu li {
@@ -378,7 +398,7 @@ form input {
 
     .card img {
         height: 174px;
-        width: 340px;
+        width: 100%;
     }
 
     .Restaurants-cards span {
@@ -389,17 +409,21 @@ form input {
     .footer {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 25px;
+        height: auto;
+        justify-content: start;
+        align-items: start;
+        gap: 2em;
     }
 
     .footer img {
-        width: 139px;
+    height: 1.5em;
     }
 
     .footer nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 7px;
+        gap: 10px;
     }
 
 }
