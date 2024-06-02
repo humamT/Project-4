@@ -1,0 +1,34 @@
+/* Footer */
+
+.footer {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: $background-color_3;
+	color: $color_3;
+	text-align: center;
+	padding: 30px;
+	gap: 4em;
+	height: 4em;
+	align-items: end;
+	justify-content: end;
+	img {
+		filter: invert(1);
+		height: 1.25em;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2em;
+		a {
+			color: $color_3;
+			text-decoration: none;
+			font-size: 1rem;
+			display: flex;
+			gap: 13px;
+			i {
+				width: 20px;
+			}
+		}
+	}
+}

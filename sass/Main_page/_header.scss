@@ -1,0 +1,27 @@
+/* Header */
+
+body {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	color: $color_1;
+}
+
+.main-wrapper {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+header {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+
+	.logo {
+		img {
+			width: 200px;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+div.main {
+	img {
+		height: 383px;
+		display: block;
+		object-fit: cover;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}

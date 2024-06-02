@@ -1,0 +1,24 @@
+header.page-header {
+
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	flex-direction: row-reverse;
+	position: relative;
+	align-items: center;
+	.logo {
+		img {
+			width: 200px;
+		}
+	}
+	.back_btn {
+		display: flex;
+		background: none;
+		border: none;
+		font-size: 24px;
+		cursor: pointer;
+		position: absolute;
+		left: 17px;
+		align-items: center;
+	}
+}

@@ -1,0 +1,32 @@
+/* Reservez Section */
+
+.reservez {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #F6F6F6;
+	padding: 20px;
+	gap: 30px;
+	h1 {
+		font-size: 2.5em;
+		margin: 0;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 300;
+		margin: 0;
+	}
+	.Explorer {
+		text-decoration: none;
+		padding: 15px 25px;
+		border-radius: 25px;
+		background-image: linear-gradient(#FF79DA, #9356DC);
+		color: $color_3;
+		font-size: 16px;
+		font-weight: 500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+}

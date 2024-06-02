@@ -1,0 +1,64 @@
+.page {
+    padding: 20px;
+    background: #F6F6F6;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    top: -40px;
+    position: relative;
+    width: 73%;
+    align-self: center;
+    padding: 0;
+    margin-bottom: -40px;
+
+    header.menu-header {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        align-self: center;
+        box-shadow: none;
+
+        h1 {
+            font-family: $font-family_3;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
+}
+
+.heart {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+
+    * {
+        font-size: 1.2rem;
+        position: absolute;
+    }
+
+    .fa-regular {
+        display: block;
+        font-size: 2em;
+    }
+
+    .fa-solid {
+        display: none;
+        background: linear-gradient(#e66465, #9198e5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-size: 2em;
+    }
+
+    &:hover {
+        .fa-solid {
+            display: block;
+        }
+
+        .fa-regular {
+            display: none;
+        }
+    }
+}

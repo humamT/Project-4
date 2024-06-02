@@ -1,0 +1,92 @@
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+	.main-wrapper {
+		width: 100%;
+	}
+	.main-container {
+		header {
+			display: flex;
+			position: sticky;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px;
+			height: 40px;
+			z-index: 10;
+			.logo {
+				height: 36px;
+			}
+		}
+	}
+	form {
+		position: relative;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+	}
+	.Fonctionnement {
+		display: flex;
+		flex-direction: column;
+		margin: 40px 0;
+		padding: 0 20px;
+		menu {
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			padding: 0 20px;
+			width: 100%;
+			box-sizing: border-box;
+			li {
+				width: 100%;
+			}
+		}
+	}
+	.reservez {
+		text-align: center;
+		padding: 50px 20px;
+		.Explorer {
+			height: 35px;
+			border-radius: 35px;
+		}
+	}
+	.Restaurants {
+		display: flex;
+		flex-direction: column;
+		padding: 60px 20px;
+	}
+	.Restaurants-cards {
+		gap: 18px;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		a {
+			width: 100%;
+			display: inline-block;
+		}
+		span {
+			right: 10px;
+			top: 10px;
+		}
+	}
+	.card {
+		img {
+			height: 174px;
+			width: 100%;
+		}
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+		height: auto;
+		justify-content: start;
+		align-items: start;
+		gap: 2em;
+		img {
+			height: 1.5em;
+		}
+		nav {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+		}
+	}
+
+	
+}

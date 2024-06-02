@@ -1,0 +1,105 @@
+/* Restaurants Section */
+
+.Restaurants {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	background: #f6f6f6;
+	padding: 30px;
+	h3 {
+		font-size: 25px;
+		margin: 20px 0;
+	}
+}
+.Restaurants-cards {
+	display: flex;
+	flex-flow: wrap;
+	column-gap: 100px;
+	row-gap: 50px;
+	a {
+		width: calc(47% - 28px);
+		text-decoration: none;
+	}
+	span {
+		align-content: center;
+		position: absolute;
+		color: $color_7;
+		background: $background-color_4;
+		height: 29px;
+		width: 80px;
+		border-radius: 2px;
+		text-align: center;
+		top: 10px;
+		right: 10px;
+	}
+}
+.card {
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: $background-color_2;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	img {
+		display: block;
+		height: 231px;
+		object-fit: cover;
+	}
+}
+.card-content {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+}
+.card-txt {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	flex: 1;
+	h4 {
+		margin: 0;
+		font-size: 18px;
+		color: $color_2;
+	}
+	p {
+		margin: 0;
+		color: $color_2;
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+.heart {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3em;
+	* {
+		font-size: 1.2rem;
+		position: absolute;
+	}
+	.fa-regular {
+		display: block;
+		font-size: 2em;
+	}
+	.fa-solid {
+		display: none;
+		background: linear-gradient(#e66465, #9198e5);
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
+		font-size: 2em;
+	}
+	&:hover {
+		.fa-solid {
+			display: block;
+		}
+		.fa-regular {
+			display: none;
+		}
+	}
+}
