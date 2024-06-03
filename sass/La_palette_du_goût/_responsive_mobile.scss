@@ -2,16 +2,13 @@ $color_1: #fff;
 $background-color_1: #fff;
 
 @media (max-width: 768px) {
-    .main-container {
-        padding: 0;
-
-        .div {
-            img {
-                width: 100%;
-                height: 100%;
-            }
+    div.main {
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
+
 
     .page {
         width: 100%;
@@ -20,9 +17,7 @@ $background-color_1: #fff;
     .page-header {
         flex-direction: column;
 
-        .back_btn {
-
-        }
+        .back_btn {}
     }
 
     .menu {

@@ -615,10 +615,7 @@ div.main img {
 }
 
 @media (max-width: 768px) {
-  .main-container {
-    padding: 0;
-  }
-  .main-container .div img {
+  div.main img {
     width: 100%;
     height: 100%;
   }
