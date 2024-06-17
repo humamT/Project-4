@@ -29,19 +29,22 @@
 			display: flex;
 			flex-direction: column;
 			align-self: center;
-			padding: 0 20px;
 			width: 100%;
 			box-sizing: border-box;
 			li {
 				width: 100%;
 			}
 		}
+		.button {
+			padding: 1.4em 1.25em;
+			font-family: 'Roboto';
+		}
 	}
 	.reservez {
 		text-align: center;
 		padding: 50px 20px;
 		.Explorer {
-			height: 35px;
+			height: 24px;
 			border-radius: 35px;
 		}
 	}

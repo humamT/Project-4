@@ -49,7 +49,7 @@
 		cursor: pointer;
 		text-align: left;
 		gap: 1em;
-		&:active {
+		&:hover {
 			i {
 				color: $color_6;
 			}

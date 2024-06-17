@@ -2,6 +2,13 @@ $color_1: #fff;
 $background-color_1: #fff;
 
 @media (max-width: 768px) {
+    .reservez {
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+    }
+
     div.main {
         img {
             width: 100%;
