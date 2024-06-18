@@ -528,6 +528,8 @@ div.main img {
   text-align: left;
   display: flex;
   flex-direction: row;
+  animation: itemAppear 0.6s;
+  animation-fill-mode: both;
 }
 .courses .options .btn .btn-text {
   flex: 1;
@@ -579,6 +581,33 @@ div.main img {
   font-size: 24px;
   color: green;
   display: none;
+}
+.courses .options .delay-0 {
+  animation-delay: 0s;
+}
+.courses .options .delay-1 {
+  animation-delay: 0.1s;
+}
+.courses .options .delay-2 {
+  animation-delay: 0.2s;
+}
+.courses .options .delay-3 {
+  animation-delay: 0.3s;
+}
+.courses .options .delay-4 {
+  animation-delay: 0.4s;
+}
+.courses .options .delay-5 {
+  animation-delay: 0.5s;
+}
+.courses .options .delay-6 {
+  animation-delay: 0.6s;
+}
+.courses .options .delay-7 {
+  animation-delay: 0.7s;
+}
+.courses .options .delay-8 {
+  animation-delay: 0.8s;
 }
 .courses .options .btn.selected span i {
   display: inline;
